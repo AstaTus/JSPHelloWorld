@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JSPHelloWorld:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JSPHelloWorld_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JSPHelloWorld/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JSPHelloWorld" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql:mysql-connector-java:5.1.36" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
