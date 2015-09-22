@@ -30,4 +30,72 @@
         <servlet-name>CheckServlet</servlet-name>
         <url-pattern>/checkServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet16</servlet-name>
+        <servlet-class>com.astatus.servlet.Servlet16</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet16</servlet-name>
+        <url-pattern>/LoginServlet16</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet17</servlet-name>
+        <servlet-class>com.astatus.servlet.LoginServlet17</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet17</servlet-name>
+        <url-pattern>/LoginServlet17</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet17</servlet-name>
+        <servlet-class>com.astatus.servlet.LogoutServlet17</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet17</servlet-name>
+        <url-pattern>/LogoutServlet17</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>FilterOne</filter-name>
+        <filter-class>com.astatus.filter.FilterOne</filter-class>
+        <init-param>
+            <param-name>param</param-name>
+            <param-value>astatus</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterOne</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>FilterTow</filter-name>
+        <filter-class>com.astatus.filter.FilterTow</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterTow</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.astatus.filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>PermissionFilter</filter-name>
+        <filter-class>com.astatus.filter.PermissionFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PermissionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>
