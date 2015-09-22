@@ -30,7 +30,6 @@ public class HelloServlet extends HttpServlet{
         PrintWriter pw = resp.getWriter();
         pw.println("Hello World!");
         pw.close();
-        super.service(req, resp);
     }
 
     @Override
